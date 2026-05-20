@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>환자 혈압 데이터 테이블</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe3ee;
+      --accent: #2563eb;
+      --soft: #eef4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef4ff, #f8fafc);
+      color: var(--text);
+    }
+    .wrap {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(219, 227, 238, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      padding: 24px;
+    }
+    h1 { margin: 0 0 10px; font-size: 2rem; }
+    .desc { margin: 0 0 20px; color: var(--muted); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .stat {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+    }
+    .stat span { display: block; color: var(--muted); font-size: 0.92rem; }
+    .stat strong { display: block; margin-top: 6px; font-size: 1.4rem; color: var(--accent); }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+      background: white;
+    }
+    thead th {
+      background: #f1f6ff;
+      color: #12326b;
+      text-align: left;
+      padding: 14px 16px;
+      border-bottom: 2px solid var(--line);
+    }
+    tbody td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    tbody tr:nth-child(even) { background: #fafcff; }
+    tbody tr:hover { background: #eef4ff; }
+    .note {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>환자 혈압 데이터 테이블</h1>
+      <p class="desc">결측치가 없는 정상 데이터만 표시합니다.</p>
+
+      <div class="stats">
+        <div class="stat"><span>전체 데이터 수</span><strong>100</strong></div>
+        <div class="stat"><span>제외된 데이터 수</span><strong>0</strong></div>
+        <div class="stat"><span>정상 데이터 수</span><strong>100</strong></div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>나이</th>
+              <th>혈압</th>
+            </tr>
+          </thead>
+          <tbody>
+<tr><td>김민준</td><td>24</td><td>128</td></tr>
+<tr><td>이서연</td><td>31</td><td>133</td></tr>
+<tr><td>박지훈</td><td>46</td><td>137</td></tr>
+<tr><td>최유진</td><td>28</td><td>125</td></tr>
+<tr><td>정현우</td><td>52</td><td>140</td></tr>
+<tr><td>강다은</td><td>37</td><td>129</td></tr>
+<tr><td>조수민</td><td>23</td><td>122</td></tr>
+<tr><td>윤지우</td><td>41</td><td>134</td></tr>
+<tr><td>장서준</td><td>56</td><td>138</td></tr>
+<tr><td>임하윤</td><td>29</td><td>126</td></tr>
+<tr><td>한도윤</td><td>34</td><td>131</td></tr>
+<tr><td>오예린</td><td>47</td><td>136</td></tr>
+<tr><td>서준호</td><td>21</td><td>121</td></tr>
+<tr><td>신지민</td><td>39</td><td>130</td></tr>
+<tr><td>권민서</td><td>53</td><td>139</td></tr>
+<tr><td>황태현</td><td>26</td><td>124</td></tr>
+<tr><td>안채원</td><td>44</td><td>135</td></tr>
+<tr><td>송우진</td><td>58</td><td>140</td></tr>
+<tr><td>유나현</td><td>32</td><td>127</td></tr>
+<tr><td>홍지안</td><td>27</td><td>123</td></tr>
+<tr><td>전시우</td><td>49</td><td>132</td></tr>
+<tr><td>고은서</td><td>36</td><td>128</td></tr>
+<tr><td>문준영</td><td>22</td><td>120</td></tr>
+<tr><td>양서아</td><td>55</td><td>137</td></tr>
+<tr><td>손동현</td><td>30</td><td>126</td></tr>
+<tr><td>배가은</td><td>42</td><td>134</td></tr>
+<tr><td>백성민</td><td>25</td><td>122</td></tr>
+<tr><td>허지현</td><td>38</td><td>133</td></tr>
+<tr><td>남시온</td><td>51</td><td>139</td></tr>
+<tr><td>노하늘</td><td>33</td><td>127</td></tr>
+<tr><td>심태윤</td><td>48</td><td>136</td></tr>
+<tr><td>하민재</td><td>20</td><td>121</td></tr>
+<tr><td>곽서현</td><td>45</td><td>138</td></tr>
+<tr><td>성유준</td><td>57</td><td>140</td></tr>
+<tr><td>차민지</td><td>27</td><td>124</td></tr>
+<tr><td>주지훈</td><td>40</td><td>129</td></tr>
+<tr><td>우지안</td><td>54</td><td>135</td></tr>
+<tr><td>구서윤</td><td>35</td><td>130</td></tr>
+<tr><td>민도현</td><td>43</td><td>132</td></tr>
+<tr><td>류하린</td><td>29</td><td>126</td></tr>
+<tr><td>나윤호</td><td>24</td><td>123</td></tr>
+<tr><td>진소율</td><td>50</td><td>137</td></tr>
+<tr><td>지호준</td><td>31</td><td>128</td></tr>
+<tr><td>엄예서</td><td>46</td><td>134</td></tr>
+<tr><td>채서아</td><td>22</td><td>120</td></tr>
+<tr><td>원현서</td><td>59</td><td>140</td></tr>
+<tr><td>천민호</td><td>37</td><td>131</td></tr>
+<tr><td>방지윤</td><td>28</td><td>125</td></tr>
+<tr><td>공도영</td><td>41</td><td>133</td></tr>
+<tr><td>현유나</td><td>53</td><td>139</td></tr>
+<tr><td>변서진</td><td>34</td><td>127</td></tr>
+<tr><td>염준서</td><td>26</td><td>122</td></tr>
+<tr><td>추가온</td><td>47</td><td>136</td></tr>
+<tr><td>전민혁</td><td>23</td><td>121</td></tr>
+<tr><td>심소민</td><td>55</td><td>138</td></tr>
+<tr><td>이유진</td><td>38</td><td>129</td></tr>
+<tr><td>김하늘</td><td>30</td><td>124</td></tr>
+<tr><td>박서준</td><td>44</td><td>135</td></tr>
+<tr><td>최민아</td><td>21</td><td>120</td></tr>
+<tr><td>정도윤</td><td>52</td><td>140</td></tr>
+<tr><td>강예진</td><td>27</td><td>123</td></tr>
+<tr><td>조현서</td><td>36</td><td>132</td></tr>
+<tr><td>윤민규</td><td>49</td><td>137</td></tr>
+<tr><td>장채은</td><td>25</td><td>126</td></tr>
+<tr><td>임준영</td><td>42</td><td>134</td></tr>
+<tr><td>한수아</td><td>58</td><td>139</td></tr>
+<tr><td>오지훈</td><td>33</td><td>128</td></tr>
+<tr><td>서민지</td><td>46</td><td>136</td></tr>
+<tr><td>신우성</td><td>20</td><td>121</td></tr>
+<tr><td>권다현</td><td>57</td><td>140</td></tr>
+<tr><td>황승우</td><td>31</td><td>127</td></tr>
+<tr><td>안지수</td><td>45</td><td>133</td></tr>
+<tr><td>송재현</td><td>24</td><td>122</td></tr>
+<tr><td>유소연</td><td>39</td><td>130</td></tr>
+<tr><td>홍태민</td><td>54</td><td>138</td></tr>
+<tr><td>전민지</td><td>28</td><td>125</td></tr>
+<tr><td>고준서</td><td>41</td><td>132</td></tr>
+<tr><td>문서아</td><td>56</td><td>140</td></tr>
+<tr><td>양현준</td><td>35</td><td>129</td></tr>
+<tr><td>손지아</td><td>48</td><td>137</td></tr>
+<tr><td>배시후</td><td>22</td><td>120</td></tr>
+<tr><td>백서희</td><td>50</td><td>136</td></tr>
+<tr><td>허도윤</td><td>29</td><td>124</td></tr>
+<tr><td>남예은</td><td>43</td><td>134</td></tr>
+<tr><td>노준호</td><td>26</td><td>123</td></tr>
+<tr><td>심가연</td><td>38</td><td>131</td></tr>
+<tr><td>하성민</td><td>47</td><td>138</td></tr>
+<tr><td>곽유진</td><td>32</td><td>126</td></tr>
+<tr><td>성지훈</td><td>59</td><td>140</td></tr>
+<tr><td>차은우</td><td>23</td><td>121</td></tr>
+<tr><td>주민서</td><td>40</td><td>133</td></tr>
+<tr><td>우태경</td><td>51</td><td>139</td></tr>
+<tr><td>구하윤</td><td>34</td><td>127</td></tr>
+<tr><td>민서준</td><td>45</td><td>135</td></tr>
+<tr><td>류지현</td><td>27</td><td>124</td></tr>
+<tr><td>나현서</td><td>52</td><td>140</td></tr>
+<tr><td>진유빈</td><td>36</td><td>128</td></tr>
+<tr><td>지서윤</td><td>44</td><td>134</td></tr>
+<tr><td>엄준혁</td><td>25</td><td>122</td></tr>
+<tr><td>채민호</td><td>57</td><td>138</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">정상 데이터만 필터링하여 표에 표시했습니다.</p>
+    </section>
+  </main>
+</body>
+</html>

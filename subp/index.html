@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML Page</title>
+  <style>
+    /* 페이지 전체를 가운데 정렬하는 기본 스타일 */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #222;
+    }
+
+    /* 내용 박스 스타일 */
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 32px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1f6feb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1557b0;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- 페이지 제목 -->
+    <h1>첫 번째 HTML 페이지</h1>
+
+    <!-- 간단한 설명 문구 -->
+    <p>Node.js 환경에서 실행할 수 있는 아주 기본적인 웹페이지 예제입니다.</p>
+
+    <!-- 버튼 1개만 표시 -->
+    <button id="helloButton">클릭해보세요</button>
+  </main>
+
+  <script>
+    // 버튼을 클릭하면 간단한 안내창을 보여줍니다.
+    const helloButton = document.getElementById("helloButton");
+
+    helloButton.addEventListener("click", function () {
+      alert("버튼이 정상적으로 동작했습니다.");
+    });
+  </script>
+</body>
+</html>
