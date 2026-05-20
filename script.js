@@ -28,7 +28,7 @@ function handleStartClick() {
 
   } else {
 
-    showMessage("이름을 먼저 입력해주세요.", "warning");
+    showMessage("이름을 입력한 뒤 다시 시도해주세요", "warning");
 
   }
 
@@ -37,5 +37,4 @@ function handleStartClick() {
 
 
 startButton.addEventListener("click", handleStartClick);
-
 
